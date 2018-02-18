@@ -39,8 +39,8 @@ internal class CollieGalleryDefaultTransition: CollieGalleryTransitionProtocol {
         presentedControllerView.alpha = 0.0
         
         presentedController.pagingScrollView.transform = self.minorScale
-        presentedController.closeButton.center.x -= self.offStage
-        presentedController.actionButton?.center.x += self.offStage
+        presentedController.closeButton.center.y -= self.offStage
+        presentedController.actionButton?.center.y -= self.offStage
         presentedController.progressTrackView?.center.y += self.offStage
         presentedController.captionView.center.y += self.offStage
         
@@ -50,8 +50,8 @@ internal class CollieGalleryDefaultTransition: CollieGalleryTransitionProtocol {
         UIView.animate(withDuration: duration, delay: 0.0, usingSpringWithDamping: 1.0, initialSpringVelocity: 0.0, options: .allowUserInteraction, animations: {
             
             presentedControllerView.alpha = 1.0
-            presentedController.closeButton.center.x += self.offStage
-            presentedController.actionButton?.center.x -= self.offStage
+            presentedController.closeButton.center.y += self.offStage
+            presentedController.actionButton?.center.y += self.offStage
             presentedController.progressTrackView?.center.y -= self.offStage
             presentedController.captionView.center.y -= self.offStage
             presentedController.pagingScrollView.transform = CGAffineTransform.identity
@@ -71,11 +71,11 @@ internal class CollieGalleryDefaultTransition: CollieGalleryTransitionProtocol {
         UIView.animate(withDuration: duration, delay: 0.0, usingSpringWithDamping: 1.0, initialSpringVelocity: 0.0, options: .allowUserInteraction, animations: {
             
             presentingControllerView.alpha = 0.0
-            presentingController.closeButton.center.x -= self.offStage
-            presentingController.actionButton?.center.x += self.offStage
+            presentingController.closeButton.center.y -= self.offStage
+            presentingController.actionButton?.center.y -= self.offStage
             presentingController.progressTrackView?.center.y += self.offStage
             presentingController.captionView.center.y += self.offStage
-            presentingController.pagingScrollView.transform = self.minorScale
+            presentingController.pagingScrollView.center.y += presentingController.pagingScrollView.frame.height / 2
             
             }, completion: {(completed: Bool) -> Void in
                 if(transitionContext.transitionWasCancelled){

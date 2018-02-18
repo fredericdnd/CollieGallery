@@ -68,8 +68,8 @@ open class CollieGalleryZoomTransition: CollieGalleryTransitionProtocol {
         
         presentedController.view.backgroundColor = presentedController.view.backgroundColor?.withAlphaComponent(0.0)
         
-        presentedController.closeButton.center.x -= self.offStage
-        presentedController.actionButton?.center.x += self.offStage
+        presentedController.closeButton.center.y -= self.offStage
+        presentedController.actionButton?.center.y -= self.offStage
         presentedController.progressTrackView?.center.y += self.offStage
         presentedController.captionView.center.y += self.offStage
         
@@ -82,8 +82,8 @@ open class CollieGalleryZoomTransition: CollieGalleryTransitionProtocol {
         UIView.animate(withDuration: duration, delay: 0.0, usingSpringWithDamping: 1.0, initialSpringVelocity: 0.0, options: .allowUserInteraction, animations: {
             
             presentedController.view.backgroundColor = presentedController.view.backgroundColor?.withAlphaComponent(1.0)
-            presentedController.closeButton.center.x += self.offStage
-            presentedController.actionButton?.center.x -= self.offStage
+            presentedController.closeButton.center.y += self.offStage
+            presentedController.actionButton?.center.y += self.offStage
             presentedController.progressTrackView?.center.y -= self.offStage
             presentedController.captionView.center.y -= self.offStage
             presentedController.displayedImageView.transform = CGAffineTransform.identity
@@ -105,8 +105,8 @@ open class CollieGalleryZoomTransition: CollieGalleryTransitionProtocol {
         UIView.animate(withDuration: duration, delay: 0.0, usingSpringWithDamping: 1.0, initialSpringVelocity: 0.0, options: .allowUserInteraction, animations: {
             
             presentingController.view.backgroundColor = presentingController.view.backgroundColor?.withAlphaComponent(0.0)
-            presentingController.closeButton.center.x -= self.offStage
-            presentingController.actionButton?.center.x += self.offStage
+            presentingController.closeButton.center.y -= self.offStage
+            presentingController.actionButton?.center.y -= self.offStage
             presentingController.progressTrackView?.center.y += self.offStage
             presentingController.captionView.center.y += self.offStage
             
