@@ -172,7 +172,7 @@ open class CollieGallery: UIViewController, UIScrollViewDelegate, CollieGalleryV
     }
     
     override open var prefersStatusBarHidden : Bool {
-        return true
+        return false
     }
     
     open override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
@@ -290,7 +290,7 @@ open class CollieGallery: UIViewController, UIScrollViewDelegate, CollieGalleryV
         let actionButton = UIButton(frame: closeButtonFrame)
         if let customImageName = options.customOptionsImageName,
             let image = UIImage(named: customImageName) {
-            closeButton.setImage(image, for: UIControlState())
+            actionButton.setImage(image, for: UIControlState())
         } else {
             actionButton.setTitle("•••", for: UIControlState())
             actionButton.titleLabel!.font = UIFont(name: "HelveticaNeue-Thin", size: 15)
