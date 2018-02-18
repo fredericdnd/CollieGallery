@@ -505,6 +505,7 @@ open class CollieGallery: UIViewController, UIScrollViewDelegate, CollieGalleryV
         captionView.titleLabel.text = picture.title
         captionView.captionLabel.text = picture.caption
         
+        captionView.fadeTransition(0.2)
         captionView.adjustView()
     }
 

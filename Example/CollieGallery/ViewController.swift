@@ -23,11 +23,14 @@ class ViewController: UIViewController, CollieGalleryZoomTransitionDelegate, Col
         for i in 1 ..< 6 {
             let image = UIImage(named: "\(i).jpg")!
     
-            let picture = CollieGalleryPicture(image: image, title: "", caption: "")
+            let picture = CollieGalleryPicture(image: image, title: "Test", caption: "test")
             pictures.append(picture)
         }
 
-        let gallery = CollieGallery(pictures: pictures)
+        let options = CollieGalleryOptions()
+        options.showCaptionView = true
+        
+        let gallery = CollieGallery(pictures: pictures, options: options)
         gallery.delegate = self
 
         gallery.presentInViewController(self)
