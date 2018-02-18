@@ -11,8 +11,6 @@
 		047794B84CD5AC9233EACE5AF5DA0D84 /* CollieGallery-iOS8.3-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C5DC25C5D4BA372DF78C69BAFE0D1B1 /* CollieGallery-iOS8.3-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1822C4776BBABAC7254C96A55E722741 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		24EDDDC707493712BBD40813A7726DF0 /* CollieGalleryPicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9653047A395BB2210E24F2F4CEEF0D /* CollieGalleryPicture.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		269C370A2039F2AD0013ECC5 /* UIViewFadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269C37092039F2AD0013ECC5 /* UIViewFadeTransition.swift */; };
-		269C370B2039F2AD0013ECC5 /* UIViewFadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269C37092039F2AD0013ECC5 /* UIViewFadeTransition.swift */; };
 		35A00095DFBE5870FD4D065E69401ECC /* CollieGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E889DD7BDAB917A746E0580E949E4 /* CollieGalleryView.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		35A1AA8C441C5604A7DB689748927603 /* CollieGalleryPicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9653047A395BB2210E24F2F4CEEF0D /* CollieGalleryPicture.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		4CA5C5A25BEAD26CFC81FF816C38AE74 /* CollieGalleryDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812C8D37287841822145D9F429EEA6D6 /* CollieGalleryDelegate.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -81,7 +79,6 @@
 		151A46FF08F30C1636B1906A0ED6D2A3 /* Pods-CollieGallery_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CollieGallery_Example.modulemap"; sourceTree = "<group>"; };
 		2037BD9435C313D14CB19B3D6477B68A /* CollieGallery-iOS8.0-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CollieGallery-iOS8.0-umbrella.h"; sourceTree = "<group>"; };
 		22B47F95189E2FD85475F4BFEEC28730 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		269C37092039F2AD0013ECC5 /* UIViewFadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewFadeTransition.swift; sourceTree = "<group>"; };
 		2E5E889DD7BDAB917A746E0580E949E4 /* CollieGalleryView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollieGalleryView.swift; path = Pod/Classes/CollieGalleryView.swift; sourceTree = "<group>"; };
 		30A7AA75821C5EBA272D185E5897E11E /* Transition.gif */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.gif; name = Transition.gif; path = Docs/Images/Transition.gif; sourceTree = "<group>"; };
 		335C4C913C96D18E23F477869D012615 /* CustomAction.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = CustomAction.png; path = Docs/Images/CustomAction.png; sourceTree = "<group>"; };
@@ -302,7 +299,6 @@
 		FBCCC0B4C93DDAF789BEEDDC2991F925 /* CollieGallery */ = {
 			isa = PBXGroup;
 			children = (
-				269C37092039F2AD0013ECC5 /* UIViewFadeTransition.swift */,
 				83B85BA6800041FDA85D7A5C2C80C316 /* CollieGallery.swift */,
 				BBAEDA468E884263D7EF1C94C722B9ED /* CollieGalleryAppearance.swift */,
 				3465D41E607F6476023322F4FA241010 /* CollieGalleryCaptionView.swift */,
@@ -478,7 +474,6 @@
 				24EDDDC707493712BBD40813A7726DF0 /* CollieGalleryPicture.swift in Sources */,
 				E99842798F80564B1D72C7D817254D8E /* CollieGalleryTheme.swift in Sources */,
 				54EBA1C3A9243284B04E045382E42285 /* CollieGalleryTransitionManager.swift in Sources */,
-				269C370A2039F2AD0013ECC5 /* UIViewFadeTransition.swift in Sources */,
 				C8BA1CDF7485F97804F38888142518CA /* CollieGalleryTransitionProtocol.swift in Sources */,
 				E66AAE7AA09C5CA70BE4C2D622CDF719 /* CollieGalleryTransitionType.swift in Sources */,
 				35A00095DFBE5870FD4D065E69401ECC /* CollieGalleryView.swift in Sources */,
@@ -518,7 +513,6 @@
 				35A1AA8C441C5604A7DB689748927603 /* CollieGalleryPicture.swift in Sources */,
 				F130E61D1ADAC2E55BAAB71388BB4AE9 /* CollieGalleryTheme.swift in Sources */,
 				A696B34C7D78DF1FE51C4ADE9B0D529A /* CollieGalleryTransitionManager.swift in Sources */,
-				269C370B2039F2AD0013ECC5 /* UIViewFadeTransition.swift in Sources */,
 				947D81330FBD26FFC34F742C28047D67 /* CollieGalleryTransitionProtocol.swift in Sources */,
 				B399892861A35F9066F908B4C61BC54E /* CollieGalleryTransitionType.swift in Sources */,
 				57AE21B167E417C779BB8483EC6D4CC6 /* CollieGalleryView.swift in Sources */,
