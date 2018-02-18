@@ -132,10 +132,6 @@ open class CollieGallery: UIViewController, UIScrollViewDelegate, CollieGalleryV
     open override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        if !UIApplication.shared.isStatusBarHidden {
-            UIApplication.shared.setStatusBarHidden(true, with: UIStatusBarAnimation.slide)
-        }
-        
         pagingScrollView.delegate = self
         
         if self.pagingScrollView.contentOffset.x == 0.0 {
@@ -159,20 +155,12 @@ open class CollieGallery: UIViewController, UIScrollViewDelegate, CollieGalleryV
     open override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
-        if UIApplication.shared.isStatusBarHidden {
-            UIApplication.shared.setStatusBarHidden(false, with: UIStatusBarAnimation.none)
-        }
-        
         pagingScrollView.delegate = nil
     }
     
     open override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         clearImagesFarFromIndex(currentPageIndex)
-    }
-    
-    override open var prefersStatusBarHidden : Bool {
-        return false
     }
     
     open override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
